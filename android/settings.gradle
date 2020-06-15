@@ -1,0 +1,9 @@
+rootProject.name = 'ARGame'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':react_viro', ':arcore_client', ':gvr_common', ':viro_renderer'
+project(':arcore_client').projectDir = new File('../node_modules/react-viro-goopy/android/arcore_client')
+project(':gvr_common').projectDir = new File('../node_modules/react-viro-goopy/android/gvr_common')
+project(':viro_renderer').projectDir = new File('../node_modules/react-viro-goopy/android/viro_renderer')
+project(':react_viro').projectDir = new File('../node_modules/react-viro-goopy/android/react_viro')
