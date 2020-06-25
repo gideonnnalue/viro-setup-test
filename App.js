@@ -6,14 +6,22 @@
  * @flow
  */
 
-import React from 'react';
-import { Text, View } from 'react-native';
+import React from "react";
+import { ViroARSceneNavigator } from "react-viro-goopy";
 
-import HelloWorldScene from './scene/HelloWorldSceneAR';
+import HelloWorldScene from "./scene/HelloWorldSceneAR";
+// import SceneTwo from "./scene/SceneTwo";
+
+var sharedProps = {
+  apiKey: "A657F0C6-7593-4A02-894B-CF5BD322F8AF",
+};
 
 const App = () => {
   return (
-    <HelloWorldScene />
+    <ViroARSceneNavigator
+      apiKey={sharedProps}
+      initialScene={{ scene: HelloWorldScene }}
+    />
   );
 };
 
