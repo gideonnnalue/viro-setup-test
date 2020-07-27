@@ -59,7 +59,7 @@ export default class HelloWorldSceneAR extends Component {
         />
         <ViroAmbientLight color={"#aaaaaa"} />
 
-        <ViroNode
+        {/* <ViroNode
           position={[0, -1, 0]}
           dragType="FixedToWorld"
           onDrag={() => {}}
@@ -77,7 +77,7 @@ export default class HelloWorldSceneAR extends Component {
             scale={[0.1, 0.1, 0.1]}
             type="VRX"
           />
-        </ViroNode>
+        </ViroNode> */}
         {/* <ViroNode
           position={[0, -1, 0]}
           dragType="FixedToWorld"
@@ -110,6 +110,39 @@ export default class HelloWorldSceneAR extends Component {
             type="VRX"
           />
         </ViroNode> */}
+        {/* <ViroNode
+          position={[0, -1, 0]}
+          dragType="FixedToWorld"
+          onDrag={() => {}}
+        > */}
+          <Viro3DObject
+            source={require("../js/res/car/1967-shelby-ford-mustang.obj")}
+            resources={[
+              require("../js/res/car/1967-shelby-ford-mustang.mtl"),
+              require("../js/res/car/bodybkgd.jpg"),
+              require("../js/res/car/interior.jpg"),
+              require("../js/res/car/interior_bump.jpg"),
+              require("../js/res/car/negx.jpg"),
+              require("../js/res/car/negx.png"),
+              require("../js/res/car/negy.jpg"),
+              require("../js/res/car/negy.png"),
+              require("../js/res/car/negz.jpg"),
+              require("../js/res/car/negz.png"),
+              require("../js/res/car/parts1.jpg"),
+              require("../js/res/car/parts2.jpg"),
+              require("../js/res/car/posx.jpg"),
+              require("../js/res/car/posx.png"),
+              require("../js/res/car/posy.jpg"),
+              require("../js/res/car/posy.png"),
+              require("../js/res/car/posz.jpg"),
+              require("../js/res/car/posz.png"),
+              require("../js/res/car/tires_bump.jpg"),
+            ]}
+            position={[0, 0, -1]}
+            scale={[0.1, 0.1, 0.1]}
+            type="OBJ"
+          />
+        {/* </ViroNode> */}
       </ViroARScene>
     );
   }

@@ -1,0 +1,2 @@
+export const CAMERA_POS = "CAMERA_POS";
+export const AR_INITIALIZED = "AR_INITIALIZED";

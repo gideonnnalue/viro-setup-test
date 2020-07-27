@@ -13,7 +13,12 @@
   "dependencies": {
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "react-viro-goopy": "^2.20.0"
+    "react-native-responsive-screen": "^1.4.1",
+    "react-native-svg": "^12.1.0",
+    "react-redux": "^7.2.0",
+    "react-viro-goopy": "^2.20.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
